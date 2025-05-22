@@ -26,86 +26,81 @@ function Experience() {
       {
         company: 'T-Mobile',
         role: 'Principal',
-        impact: 'Re-platformed core software with 90k users. Estimated savings of $30M.',
+        impact: 'Led modernization of mission-critical software to decrease time-on-task by as much as eight minutes',
         caseDeck: 'https://www.figma.com/deck/ilC80IdLpBDB4Qmdk06xmC/T-Mobile-Case-Study?node-id=1-186&t=kWQvzR5Xxf7oi62G-1',
       },
       {
         company: 'DRF',
         role: 'Lead',
-        impact: 'New digital CPG launched in six weeks, including research and design system.',
+        impact: 'Rapidly designed and launched new digital CPG product from research to deployment, including a launch-ready design system',
         caseDeck: 'https://www.figma.com/deck/9ou4ej5D1NN3cKqOC7ffNF/DRF-Case-Study?node-id=1-186&t=x7UHeCmL01YrZWou-1',
       },
       {
         company: 'Resolute',
         role: 'Lead',
-        impact: 'Prototyped and tested AI-driven health application.',
+        impact: 'Designed and validated an AI-powered health application through user testing and iterative prototyping',
         caseDeck: 'https://www.figma.com/deck/y0na3vZj4hxh2dLjK6fK1z/Resolute?node-id=1-186&t=VeSxoC0b5tPz1LuD-1',
       },
       {
         company: 'Make-A-Wish',
         role: 'Lead',
-        impact: 'Created visionary designs for core app that enabled funding.',
+        impact: 'Delivered compelling product vision and core app designs to evangelize stakeholder buy-in and secure project funding',
         caseDeck: 'https://www.figma.com/deck/ERA9niPrbyo0Cjwc9uLcWZ/Make-A-Wish?node-id=1-186&t=Dtw0yX2DR07e1qSP-1',
       },
       {
         company: 'Walgreens',
         role: 'UX Lead',
-        impact: 'Researched and implemented SaaS features for streamlined operations.',
+        impact: 'Transformed operational efficiency through user-centered SaaS feature design and implementation',
       },
       {
         company: 'Wells Fargo',
         role: 'Strategy Lead',
-        impact: 'Designed a strategy to migrate from mobile website to a dedicated mobile app.',
+        impact: 'Crafted mobile app strategy and migration roadmap to enhance customer experience and platform capabilities',
       },
       {
         company: 'Cigna',
         role: 'UX / Visual',
-        impact:
-          'Improved diabetes prevention program; semester enrollment increased 5x, dropoff reduced.',
+        impact: 'Redesigned diabetes prevention program to boost participant engagement and significantly reduce program abandonment',
       },
       {
         company: 'Method',
         role: 'UX Lead',
-        impact:
-          'New product strategy and research prototyping, identified new market gap and solution.',
+        impact: 'Uncovered untapped market opportunity through research and prototyping, leading to new product strategy',
       },
       {
         company: 'Hitachi',
         role: 'UX',
-        impact: 'Early product strategy for web services implementation.',
+        impact: 'Shaped early-stage product strategy for enterprise web services, defining core user experiences and technical approach',
       },
       {
         company: 'Dow',
         role: 'Visual Design',
-        impact: 'Research journeys to identify opportunities for solution design.',
+        impact: 'Mapped comprehensive user journeys to uncover pain points and strategic design opportunities',
       },
       {
         company: 'Playmonster',
         role: 'Solution Design',
-        impact:
-          'B2B sales platform that led to increased sales during COVID pivot.',
+        impact: 'Designed B2B sales platform enabling successful digital transformation during market disruption',
       },
       {
-        company: 'Children‘s Wisconsin',
+        company: "Children's Wisconsin",
         role: 'UX',
-        impact: 'Re-platformed core software with 90k users. Estimated savings of $30M.',
+        impact: 'Created journey maps to identify friction points and developed research prototypes to validate solutions with healthcare teams',
       },
       {
         company: 'Goodwill',
         role: 'Visual Design',
-        impact: 'Core journeys for organizational vision.',
+        impact: 'Developed strategic user journeys to align organizational vision with customer needs',
       },
       {
         company: 'VFL',
         role: 'Visual Design',
-        impact:
-          'Redesigning beta consumer web app for launch based on community feedback.',
+        impact: 'Evolved beta web app design through community-driven insights to prepare for market launch',
       },
       {
         company: 'Mavis',
         role: 'UX',
-        impact:
-          'Prototypes for early product research; vision map to identify solution opportunities.',
+        impact: 'Created strategic vision and interactive prototypes to validate product direction and identify growth opportunities',
       },
     ];
   
@@ -118,16 +113,16 @@ function Experience() {
               <th className="py-8 text-sm font-normal">Company</th>
               <th className="py-8 text-sm font-normal">Role</th>
               <th className="py-8 text-sm font-normal">Impact</th>
-              <th className="py-8"></th>
+              <th className="md:py-8"></th>
             </tr>
           </thead>
           <tbody>
             {experiences.map((exp, idx) => (
               <tr key={idx} className="max-md:flex max-md:flex-col border-b border-gray-200 align-baseline max-md:py-24 justify-end">
-                <td className="pb-0 md:py-12 pr-4 font-bold max-md:text-lg">{exp.company}</td>
-                <td className="pt-0 md:py-12 pr-16 max-md:text-gray-600 max-md:font-medium">{exp.role}</td>
-                <td className="py-12 pr-4">{exp.impact}</td>
-                <td className="py-12 flex md:justify-end">
+                <td className="pb-0 md:py-12 pr-48 font-bold max-md:text-lg">{exp.company}</td>
+                <td className="pt-0 md:py-12 pr-48 max-md:text-gray-600 max-md:font-medium">{exp.role}</td>
+                <td className="py-12 pr-4"><p className="max-w-[540px] md:max-w-[640px] mb-8">{exp.impact}</p></td>
+                <td className="py-12 flex md:pl-48 md:justify-end">
                   {exp.caseDeck ? (
                     <a
                       href={exp.caseDeck}
@@ -142,7 +137,7 @@ function Experience() {
                     // Empty placeholder to preserve height
                     <div
                       href={exp.caseDeck}
-                      className="w-full inline-flex items-center px-4 py-12 rounded hover:bg-sky-300 text-sm"
+                      className="w-full hidden md:inline-flex items-center px-4 py-12 rounded hover:bg-sky-300 text-sm"
                       target="_blank"
                       rel="noreferrer"
                     >

@@ -4,15 +4,19 @@ import { faUpRightFromSquare } from '@awesome.me/kit-cb9f7960b3/icons/classic/so
 
 function Intro() {
   return (
-    <div className="p-6 max-w-screen-xl mx-auto pt-96 pb-192 max-md:px-24 md:px-32">
+    <div className="p-6 max-w-screen-xl mx-auto max-md:px-24 md:px-32 text-center">
+      <div className="rounded-full overflow-hidden p-2 border-2 border-sky-800 inline-block">
        <Image
-          src="/images/client-logos/tmobile-128px.png"
+          src="/images/greg-on-blue.png"
           alt="Feature highlight"
           width={192}
           height={192}
           quality={100}
-          className="w-24 h-24 rounded-2xl bg-gray-100"
+          className="w-128 h-128 bg-sky-800 rounded-full"
         />
+      </div>
+      <h1 className="text-4xl font-bold mt-24 mb-16">Hello there, Greg here.</h1>
+      <h2 className="text-2xl font-regular">I’m a lean product designer with 20 years of experience.</h2>
     </div>
   )
 }
@@ -107,7 +111,7 @@ function Experience() {
   
     return (
       <div className="p-6 max-w-screen-xl mx-auto pt-96 pb-192 max-md:px-24 md:px-32">
-        <h1 className="text-xl font-bold mb-32">Recent Impact</h1>
+        <h2 className="text-xl font-bold mb-32">Recent Impact</h2>
         <table className="table-auto w-full border-collapse">
           <thead>
             <tr className="max-md:hidden text-left border-b border-gray-200">
@@ -121,7 +125,7 @@ function Experience() {
             {experiences.map((exp, idx) => (
               <tr key={idx} className="max-md:flex max-md:flex-col border-b border-gray-200 align-baseline max-md:py-24 justify-end">
                 <td className="pb-0 md:py-12 pr-4 font-bold max-md:text-lg">{exp.company}</td>
-                <td className="pt-0 md:py-12 pr-4 max-md:text-sm">{exp.role}</td>
+                <td className="pt-0 md:py-12 pr-16 max-md:text-gray-600 max-md:font-medium">{exp.role}</td>
                 <td className="py-12 pr-4">{exp.impact}</td>
                 <td className="py-12 flex md:justify-end">
                   {exp.caseDeck ? (
@@ -157,7 +161,7 @@ function Experience() {
 
 export default function Home() {
   return (
-    <main>
+    <main className="pt-64 md:pt-128 pb-128">
       <Intro />
       <Experience />
     </main>

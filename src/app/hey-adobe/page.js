@@ -80,7 +80,7 @@ export default function HeyAdobe() {
                 >
                 <Image
                     src="/images/adobe/t-mobile.png"
-                    alt="AI health tracker images"
+                    alt="T-Mobile modernized platform"
                     width={956}
                     height={752}
                     quality={100}
@@ -105,7 +105,7 @@ export default function HeyAdobe() {
                 >
                 <Image
                     src="/images/adobe/prototypes.png"
-                    alt="AI health tracker images"
+                    alt="Prototype examples"
                     width={956}
                     height={752}
                     quality={100}
@@ -120,7 +120,7 @@ export default function HeyAdobe() {
                 >
                 <Image
                     src="/images/adobe/wireframes.png"
-                    alt="AI health tracker images"
+                    alt="Wireframe examples"
                     width={956}
                     height={752}
                     quality={100}
@@ -135,7 +135,7 @@ export default function HeyAdobe() {
                 >
                 <Image
                     src="/images/adobe/user-journeys.png"
-                    alt="AI health tracker images"
+                    alt="Journey map examples"
                     width={956}
                     height={752}
                     quality={100}
@@ -150,7 +150,7 @@ export default function HeyAdobe() {
                 >
                 <Image
                     src="/images/adobe/design-systems.png"
-                    alt="AI health tracker images"
+                    alt="Design systems example"
                     width={956}
                     height={752}
                     quality={100}

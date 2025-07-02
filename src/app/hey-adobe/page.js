@@ -16,7 +16,7 @@ function Intro() {
         />
       </div>
       <h1 className="text-4xl font-bold mt-24 mb-16">Hi Adobe! I'm Greg Ochab—</h1>
-      <h2 className="text-2xl font-regular">a full-stack product designer with 20 years of experience in Product Design, UX and UI, with a passion for Figma and AI experiences.</h2>
+      <h2 className="text-xl font-regular">a full-stack product designer with 20 years of experience in Product Design, UX and UI, with a passion for Figma and AI experiences.</h2>
     </div>
   )
 }

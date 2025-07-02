@@ -4,7 +4,7 @@ import { faUpRightFromSquare } from '@awesome.me/kit-cb9f7960b3/icons/classic/so
 
 function Intro() {
   return (
-    <div className="p-6 max-w-screen-xl mx-auto max-md:px-24 md:px-32 text-center">
+    <div className="p-6 w-full max-w-screen-md mx-auto text-center">
       <div className="rounded-full overflow-hidden p-2 border-2 border-sky-800 inline-block">
        <Image
           src="/images/greg-on-blue.png"
@@ -15,8 +15,8 @@ function Intro() {
           className="w-128 h-128 bg-sky-800 rounded-full"
         />
       </div>
-      <h1 className="text-4xl font-bold mt-24 mb-16">Hello there, Greg here.</h1>
-      <h2 className="text-2xl font-regular">I'm a lean product designer with 20 years of experience.</h2>
+      <h1 className="text-4xl font-bold mt-24 mb-16">Hi Adobe! I’m Greg Ochab—</h1>
+      <h2 className="text-2xl font-regular">a full-stack product designer with 20 years of experience in Product Design, UX and UI, with a passion for Figma and AI experiences.</h2>
     </div>
   )
 }
